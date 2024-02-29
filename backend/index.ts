@@ -12,7 +12,7 @@ import SocketFun from "./socket/socketService";
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'http://localhost:5173', // url here
   credentials: true,
   optionSuccessStatus: 200
 }));
