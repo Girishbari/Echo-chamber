@@ -11,7 +11,11 @@ import SocketFun from "./socket/socketService";
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  credentials: true,
+  optionSuccessStatus: 200
+}));
 app.use(express.json());
 const PORT = 3000;
 
